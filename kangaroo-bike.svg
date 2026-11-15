@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">A kangaroo riding a bike</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3f4"/>
+      <stop offset="1" stop-color="#fde9c9"/>
+    </linearGradient>
+    <g id="wheel">
+      <circle r="90" fill="none" stroke="#2b2b2b" stroke-width="12"/>
+      <circle r="81" fill="none" stroke="#c9ced6" stroke-width="3"/>
+      <g stroke="#aab1bb" stroke-width="1.5">
+        <line x1="-80" x2="80"/>
+        <line x1="-80" x2="80" transform="rotate(30)"/>
+        <line x1="-80" x2="80" transform="rotate(60)"/>
+        <line x1="-80" x2="80" transform="rotate(90)"/>
+        <line x1="-80" x2="80" transform="rotate(120)"/>
+        <line x1="-80" x2="80" transform="rotate(150)"/>
+      </g>
+      <circle r="8" fill="#555"/>
+    </g>
+  </defs>
+
+  <!-- scene -->
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="680" cy="100" r="50" fill="#ffd166"/>
+  <path d="M0 470 Q200 400 420 460 T800 440 V600 H0Z" fill="#e9b872"/>
+  <rect y="540" width="800" height="60" fill="#c98f4e"/>
+  <ellipse cx="400" cy="545" rx="230" ry="10" fill="#000" opacity=".18"/>
+
+  <!-- speed lines -->
+  <g stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8">
+    <line x1="30" y1="300" x2="100" y2="300"/>
+    <line x1="10" y1="400" x2="110" y2="400"/>
+    <line x1="50" y1="480" x2="120" y2="480"/>
+  </g>
+
+  <!-- far leg and far crank -->
+  <g stroke-linecap="round" fill="none">
+    <line x1="390" y1="450" x2="358" y2="412" stroke="#777" stroke-width="7"/>
+    <rect x="338" y="409" width="40" height="7" rx="3" fill="#333"/>
+    <line x1="425" y1="330" x2="352" y2="392" stroke="#a86b36" stroke-width="20"/>
+    <line x1="346" y1="399" x2="402" y2="402" stroke="#a86b36" stroke-width="15"/>
+  </g>
+
+  <!-- bike -->
+  <use href="#wheel" x="230" y="450"/>
+  <use href="#wheel" x="570" y="450"/>
+  <g stroke="#e63946" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M350 300 L522 297 M530 325 L390 450 L350 300 L230 450 L390 450"/>
+    <path d="M518 280 L535 330 L570 450"/>
+  </g>
+  <g stroke="#333" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M518 280 L514 262 L486 257"/>
+    <path d="M350 300 L346 284"/>
+  </g>
+  <path d="M318 280 Q345 272 378 282 Q360 292 322 289Z" fill="#222"/>
+  <circle cx="390" cy="450" r="22" fill="none" stroke="#777" stroke-width="5"/>
+  <path d="M390 428 L230 442 M390 472 L230 458" stroke="#777" stroke-width="2"/>
+  <line x1="390" y1="450" x2="424" y2="490" stroke="#777" stroke-width="7" stroke-linecap="round"/>
+  <rect x="404" y="490" width="42" height="7" rx="3" fill="#333"/>
+
+  <!-- kangaroo -->
+  <g fill="#c8854a">
+    <!-- tail -->
+    <path d="M360 250 C300 240 220 270 120 350 C110 358 118 368 130 362 C220 320 300 310 370 300Z"/>
+    <!-- back ear -->
+    <path d="M485 112 C480 80 490 50 505 38 C515 60 510 90 502 112Z" fill="#a86b36"/>
+    <!-- torso -->
+    <path d="M335 285 C310 230 380 170 450 165 C480 165 490 195 470 225 C450 260 410 300 370 305 C350 305 340 300 335 285Z"/>
+    <path d="M472 215 C452 255 412 295 376 302 C402 272 432 238 452 198Z" fill="#edcfa6"/>
+    <!-- neck and head -->
+    <path d="M435 175 C440 150 455 135 470 130 L500 160 C490 175 480 195 475 212Z"/>
+    <path d="M455 150 C450 115 485 100 510 108 C535 115 560 128 562 140 C563 152 545 158 525 158 C500 162 470 170 455 150Z"/>
+    <path d="M562 142 C562 152 545 158 525 158 C512 160 500 163 490 164 C505 150 535 142 562 142Z" fill="#edcfa6"/>
+    <!-- front ear -->
+    <path d="M468 116 C445 90 440 60 450 40 C470 55 485 85 486 112Z"/>
+    <path d="M466 104 C452 86 449 68 453 54 C466 68 475 88 477 104Z" fill="#f2b5a0"/>
+    <!-- thigh -->
+    <path d="M340 270 C350 235 410 250 450 320 C462 342 450 362 430 358 C400 352 350 320 340 270Z" stroke="#a86b36" stroke-width="2"/>
+  </g>
+  <g stroke="#c8854a" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- shin and foot -->
+    <line x1="438" y1="345" x2="406" y2="472" stroke-width="22"/>
+    <line x1="402" y1="481" x2="466" y2="484" stroke-width="16"/>
+    <!-- arm -->
+    <path d="M455 205 L468 245 L490 257" stroke-width="14"/>
+  </g>
+  <circle cx="489" cy="257" r="9" fill="#a86b36"/>
+
+  <!-- face -->
+  <circle cx="520" cy="128" r="5" fill="#1d1d1d"/>
+  <circle cx="521.5" cy="126.500" r="1.600" fill="#fff"/>
+  <ellipse cx="559" cy="137" rx="6" ry="4.500" fill="#3a2418"/>
+  <path d="M548 151 Q540 156 531 152" stroke="#3a2418" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
